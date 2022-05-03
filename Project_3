@@ -1,0 +1,17 @@
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+left_right=input("You are at a crossroad, you wanna go to you left or right?\n")
+if left_right=="left":
+  swim_wait=input("You have reached at the side of a lake, you wanna swim or wait for a boat? \n")
+  if swim_wait=="wait":
+    red_yellow_blue=input("You have reached a place where you can see three doors in front of you, which one do you choose? Red, Yellow or Blue \n")
+    if red_yellow_blue=="red":
+      print("Burned by Fire.\nGame Over!")
+    elif red_yellow_blue=="yellow":
+      print("You Win!!!")
+    else:
+      print("Eaten by Beasts.\nGame Over!")
+  else:
+    print("Attacked by a trout.\nGame Over!")
+else:
+  print("Fallen into a hole.\nGame Over!")
